@@ -10,8 +10,9 @@ import androidx.annotation.Nullable;
 
 public class Database extends SQLiteOpenHelper
 {
-     Database DATABASE_NAME;
+     String DATABASE_NAME;
      String TABLE_NAME;
+
 
      public Database(@Nullable Context context, @Nullable String name, @Nullable SQLiteDatabase.CursorFactory factory, int version) {
         super(context, name, factory, version);
@@ -32,8 +33,8 @@ public class Database extends SQLiteOpenHelper
     public  void register(String username,String email,String password,String mobilenumber)
     {
         ContentValues cv = new ContentValues();
-        cv.put("username",username.toString());
-        cv.put("email",email.toString());
+        cv.put("username",username);
+        cv.put("email",email);
         //cv.put("password",password.toString());
         //cv.put("mobilenumber",mobilenumber.toString());
         SQLiteDatabase db= getWritableDatabase();
