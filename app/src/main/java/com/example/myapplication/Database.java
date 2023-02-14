@@ -12,6 +12,7 @@ public class Database extends SQLiteOpenHelper
 {
      String DATABASE_NAME;
      String TABLE_NAME;
+     String PASSWORD;
 
 
      public Database(@Nullable Context context, @Nullable String name, @Nullable SQLiteDatabase.CursorFactory factory, int version) {
