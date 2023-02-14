@@ -1,0 +1,18 @@
+<resources>
+    //login strings
+    <string name="app_name">My Application</string>
+    <string name="app"> 24/7      Health Care</string>
+    <string name="login"> Login Please</string>
+    <string name="username">  User Name </string>
+    <string name="password">  Password </string>
+    <string name="log">LOgIn</string>
+    <string name="bottom"> Register for New User</string>
+    <string name="confirm_password"> Confirm Password</string>
+
+    // Register Strings
+    <string name="Register_register"> Registration </string>
+    <string name="Register_email"> E-Mail </string>
+    <string name="Register_mobile"> Phone Number </string>
+    <string name="Register"> R E G I S T E R </string>
+    <string name="register_bottom">  Already have an account? </string>
+</resources>

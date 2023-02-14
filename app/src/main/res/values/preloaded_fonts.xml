@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/abril_fatface</item>
+        <item>@font/adamina</item>
+        <item>@font/alegreya_sans_sc_thin</item>
+        <item>@font/amethysta</item>
+        <item>@font/andika_new_basic</item>
+        <item>@font/artifika</item>
+        <item>@font/autour_one</item>
+        <item>@font/bangers</item>
+        <item>@font/bevan</item>
+        <item>@font/bungee_inline</item>
+        <item>@font/cedarville_cursive</item>
+        <item>@font/croissant_one</item>
+    </array>
+</resources>
