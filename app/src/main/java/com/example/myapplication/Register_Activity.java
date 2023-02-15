@@ -45,7 +45,7 @@ public class Register_Activity extends AppCompatActivity {
                     }
                     else
                     {
-                        db.register(username.toString(),email.toString(),password.toString(),Phone_Number.toString());
+                        db.register(username,password,email,Phone_Number);
                         bottomText.setText("Already Have an Acoount?");
                     }
                 }

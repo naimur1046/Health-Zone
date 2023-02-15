@@ -5,6 +5,7 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 
@@ -17,28 +18,47 @@ public class Database extends SQLiteOpenHelper
      private static String USER_NAME="User_Name";
      private static String MOVILE_NUMBER="Mobile_Number";
      private static int version=1;
+     private static Context context;
 
      public Database(@Nullable Context context) {
         super(context, DATABASE_NAME , null, version);
+        this.context=context;
     }
 
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase)
     {
-        String qury1="create table users(username text, email text , password text,mobilenumber text);";
-        sqLiteDatabase.execSQL(qury1);
+        String qury1=" CREATE TABLE " + TABLE_NAME +" ( " + USER_NAME+ " VARCHAR(20) , "+PASSWORD +" VARCHAR(20) , " +EMAIL+" VARCHAR(20) , " + MOVILE_NUMBER + " VARCHAR(20) " + " ); ";
+        try {
+            sqLiteDatabase.execSQL(qury1);
+        }
+        catch (Exception e)
+        {
+            Toast.makeText(context, "Exception is "+e, Toast.LENGTH_SHORT).show();
+        }
 
     }
 
     @Override
-    public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
-
+    public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1)
+    {
+        try
+        {
+            sqLiteDatabase.execSQL(" DROP TABLE IF EXISTS "+TABLE_NAME);
+            onCreate(sqLiteDatabase);
+        }
+        catch (Exception e)
+        {
+            Toast.makeText(context, "Exception is "+e, Toast.LENGTH_SHORT).show();
+        }
     }
     public  void register(String username,String email,String password,String mobilenumber)
     {
         ContentValues cv = new ContentValues();
-        cv.put("username",username);
-        cv.put("email",email);
+        cv.put(USER_NAME,username);
+        cv.put(PASSWORD,password);
+        cv.put(EMAIL,email);
+        cv.put(MOVILE_NUMBER,mobilenumber);
 
         SQLiteDatabase db= getWritableDatabase();
         db.insert("users",null,cv);
