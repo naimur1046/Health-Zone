@@ -34,7 +34,7 @@ public class login_activity extends AppCompatActivity {
             public void onClick(View view) {
                 String name=edUsername.getText().toString();
                 String password=edPassword.getText().toString();
-                Database db= new Database(getApplicationContext(),"Health_Zone",null,1);
+                Database db= new Database(getApplicationContext());
                 if(name.length()==0||password.length()==0)
                 {
                     register.setText("Please enter login info");
