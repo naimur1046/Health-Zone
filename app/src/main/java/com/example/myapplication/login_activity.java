@@ -41,7 +41,15 @@ public class login_activity extends AppCompatActivity {
                 }
                 else
                 {
-
+                    int a=db.login(name,password);
+                    if (a==1)
+                    {
+                        Toast.makeText(login_activity.this, "Information is ok", Toast.LENGTH_SHORT).show();
+                    }
+                    else
+                    {
+                        Toast.makeText(login_activity.this, "Not ok ", Toast.LENGTH_SHORT).show();
+                    }
                 }
             }
         });

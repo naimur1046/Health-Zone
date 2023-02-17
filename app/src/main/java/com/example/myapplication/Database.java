@@ -65,4 +65,19 @@ public class Database extends SQLiteOpenHelper
         db.close();
 
     }
+    public int login(String username,String password)
+    {
+        int result=0;
+        SQLiteDatabase db= getReadableDatabase();
+        String ara[]=new String[2];
+        ara[0]=username;
+        ara[1]=password;
+        Cursor c=db.rawQuery(" SELECT * FROM "+TABLE_NAME+" WHERE "+USER_NAME+" =? "+" AND " +PASSWORD+" =? ",ara);
+        if(c.moveToFirst())
+        {
+            result=1;
+        }
+
+        return result;
+    }
 }
