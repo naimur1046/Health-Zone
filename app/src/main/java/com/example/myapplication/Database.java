@@ -17,7 +17,7 @@ public class Database extends SQLiteOpenHelper
      private static String EMAIL="Email";
      private static String USER_NAME="User_Name";
      private static String MOVILE_NUMBER="Mobile_Number";
-     private static int version=1;
+     private static int version=3;
      private static Context context;
 
      public Database(@Nullable Context context) {
@@ -52,7 +52,7 @@ public class Database extends SQLiteOpenHelper
             Toast.makeText(context, "Exception is "+e, Toast.LENGTH_SHORT).show();
         }
     }
-    public  void register(String username,String email,String password,String mobilenumber)
+    public  void register(String username,String password,String email,String mobilenumber)
     {
         ContentValues cv = new ContentValues();
         cv.put(USER_NAME,username);
@@ -61,7 +61,7 @@ public class Database extends SQLiteOpenHelper
         cv.put(MOVILE_NUMBER,mobilenumber);
 
         SQLiteDatabase db= getWritableDatabase();
-        db.insert("users",null,cv);
+        db.insert(TABLE_NAME,null,cv);
         db.close();
 
     }
