@@ -7,6 +7,7 @@ package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -46,6 +47,12 @@ public class login_activity extends AppCompatActivity {
                     if (a==1)
                     {
                         Toast.makeText(login_activity.this, "Information is ok", Toast.LENGTH_SHORT).show();
+                        SharedPreferences sp= getSharedPreferences("Simple_Data", Context.MODE_PRIVATE);
+                        SharedPreferences.Editor editor = sp.edit();
+                        editor.putString("User_Name",name);
+                        editor.putString("Password",password);
+                        editor.apply();
+                        startActivity( new Intent(login_activity.this,Home_Activity.class));
                     }
                     else
                     {
