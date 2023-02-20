@@ -15,4 +15,13 @@
     <string name="Register_mobile"> Phone Number </string>
     <string name="Register"> R E G I S T E R </string>
     <string name="register_bottom">  Already have an account? </string>
+
+    // Home Activity Strings
+    <string name="labtest"> Lab Test </string>
+    <string name="buymedicine"> Buy Medicine </string>
+    <string name="finddoctor"> Find Doctor </string>
+    <string name="healtharticle"> Health Article </string>
+    <string name="orderdetail"> Order Details </string>
+    <string name="blood"> Blood Donar </string>
+    <string name="exit"> E X I T </string>
 </resources>
