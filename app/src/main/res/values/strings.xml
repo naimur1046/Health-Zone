@@ -8,6 +8,7 @@
     <string name="log">LOgIn</string>
     <string name="bottom"> Register for New User</string>
     <string name="confirm_password"> Confirm Password</string>
+    <string name="homeappname"> 24/7  Health Care </string>
 
     // Register Strings
     <string name="Register_register"> Registration </string>
@@ -24,4 +25,5 @@
     <string name="orderdetail"> Order Details </string>
     <string name="blood"> Blood Donar </string>
     <string name="exit"> E X I T </string>
+    <string name="four"> 4 </string>
 </resources>
