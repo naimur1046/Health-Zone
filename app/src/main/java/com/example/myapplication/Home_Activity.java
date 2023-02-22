@@ -31,5 +31,13 @@ public class Home_Activity extends AppCompatActivity {
             }
         });
 
+        CardView find_doctor = findViewById(R.id.Find_Doctor);
+        find_doctor.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(Home_Activity.this,Find_Doctor.class));
+            }
+        });
+
     }
 }

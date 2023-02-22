@@ -37,7 +37,7 @@
         android:rowCount="@integer/four">
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/labtest"
+            android:id="@+id/family_physician"
             android:layout_width="166dp"
             android:layout_height="wrap_content"
             android:layout_row="0"
@@ -51,7 +51,7 @@
             app:cardUseCompatPadding="true">
 
             <LinearLayout
-                android:id="@+id/lab_layout"
+                android:id="@+id/family_physician_layout"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical|center_horizontal"
@@ -59,7 +59,7 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/labtest_text"
+                    android:id="@+id/family_physician_text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:drawableTop="@drawable/home"

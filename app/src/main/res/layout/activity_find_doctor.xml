@@ -1,9 +1,278 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Find_Doctor">
+    tools:context=".Find_Doctor"
+    android:background="@drawable/background"
+    >
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/appname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="21dp"
+        android:fontFamily="@font/croissant_one"
+        android:paddingTop="10sp"
+        android:text="@string/homeappname"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        android:verticalScrollbarPosition="defaultPosition" />
+
+    <TextView
+        android:id="@+id/doctorlist_header"
+        android:layout_width="246dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/appname"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="93dp"
+        android:text="@string/top_doctor"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <GridLayout
+        android:id="@+id/girdlayout"
+        android:layout_width="match_parent"
+        android:layout_height="635dp"
+        android:layout_below="@id/doctorlist_header"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:columnCount="@integer/two"
+        android:rowCount="@integer/three">
+
+        <androidx.cardview.widget.CardView
+
+            android:id="@+id/family_physician"
+            android:layout_width="166dp"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_rowWeight="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            app:cardBackgroundColor="#c6e2ff"
+            app:cardCornerRadius="10sp"
+            app:cardElevation="8sp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:id="@+id/family_physician_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/family_physician_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/family_physicain"
+                    android:textAlignment="center"
+                    android:textColor="#089517"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:drawableTopCompat="@drawable/male_doctor" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+
+            android:id="@+id/ditetian"
+            android:layout_width="166dp"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_rowWeight="1"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            app:cardBackgroundColor="#c6e2ff"
+            app:cardCornerRadius="10sp"
+            app:cardElevation="8sp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:id="@+id/ditetian_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/ditetian_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dietician"
+                    android:textAlignment="center"
+                    android:textColor="#089517"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:drawableTopCompat="@drawable/nutrition" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+
+            android:id="@+id/dentist"
+            android:layout_width="166dp"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_rowWeight="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            app:cardBackgroundColor="#c6e2ff"
+            app:cardCornerRadius="10sp"
+            app:cardElevation="8sp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:id="@+id/dentist_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/dentist_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dentist"
+                    android:textAlignment="center"
+                    android:textColor="#089517"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:drawableTopCompat="@drawable/dentist_svg" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+
+            android:id="@+id/surgian"
+            android:layout_width="166dp"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_rowWeight="1"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            app:cardBackgroundColor="#c6e2ff"
+            app:cardCornerRadius="10sp"
+            app:cardElevation="8sp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:id="@+id/surgian_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/surgian_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/surgeon"
+                    android:textAlignment="center"
+                    android:textColor="#089517"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:drawableTopCompat="@drawable/surgery_tool" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+
+            android:id="@+id/heart_specialist"
+            android:layout_width="166dp"
+            android:layout_height="wrap_content"
+            android:layout_row="2"
+            android:layout_rowWeight="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            app:cardBackgroundColor="#c6e2ff"
+            app:cardCornerRadius="10sp"
+            app:cardElevation="8sp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:id="@+id/heart_specialist_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/heart_specialist_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/heart_specialist"
+                    android:textAlignment="center"
+                    android:textColor="#089517"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:drawableTopCompat="@drawable/heart_2" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+
+            android:id="@+id/venereologist"
+            android:layout_width="166dp"
+            android:layout_height="wrap_content"
+            android:layout_row="2"
+            android:layout_rowWeight="1"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            app:cardBackgroundColor="#c6e2ff"
+            app:cardCornerRadius="10sp"
+            app:cardElevation="8sp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:id="@+id/venereologist_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/venereologist_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/venereologist"
+                    android:textAlignment="center"
+                    android:textColor="#089517"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:drawableTopCompat="@drawable/male_female" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </GridLayout>
+
+
+</RelativeLayout>

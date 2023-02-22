@@ -26,4 +26,13 @@
     <string name="blood"> Blood Donar </string>
     <string name="exit"> E X I T </string>
     <string name="four"> 4 </string>
+
+    // Find Doctor
+    <string name="top_doctor"> T o p  D o c t o r s </string>
+    <string name="family_physicain"> Family Physician </string>
+    <string name="dentist"> Dentist </string>
+    <string name="surgeon"> Surgeon </string>
+    <string name="heart_specialist"> Heart Specialist </string>
+    <string name="venereologist"> venereologist </string>
+    <string name="dietician"> Dietician </string>
 </resources>
