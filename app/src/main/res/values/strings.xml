@@ -38,5 +38,12 @@
 
     // activity doctor details
     <string name="defeault_text"> D e f e u l t   T e x t </string>
-    
+
+    // New user
+    <string name="welcome_to"> Welcome to </string>
+    <string name="regular_user"> Regular User </string>
+    <string name="doctor"> Doctor </string>
+    <string name="blood_doner"> Blood Doner </string>
+    <string name="choice_a_option"> Choice a Option </string>
+    <string name="normal_user"> Normal User </string>
 </resources>
