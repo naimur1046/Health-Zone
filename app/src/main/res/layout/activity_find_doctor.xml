@@ -27,7 +27,7 @@
         android:verticalScrollbarPosition="defaultPosition" />
 
     <TextView
-        android:id="@+id/doctorlist_header"
+        android:id="@+id/title_text"
         android:layout_width="246dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/appname"
@@ -44,7 +44,7 @@
         android:id="@+id/girdlayout"
         android:layout_width="match_parent"
         android:layout_height="635dp"
-        android:layout_below="@id/doctorlist_header"
+        android:layout_below="@id/title_text"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="0dp"
         android:columnCount="@integer/two"

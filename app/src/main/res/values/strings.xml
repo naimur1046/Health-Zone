@@ -36,5 +36,7 @@
     <string name="venereologist"> venereologist </string>
     <string name="dietician"> Dietician </string>
 
-
+    // activity doctor details
+    <string name="defeault_text"> D e f e u l t   T e x t </string>
+    
 </resources>

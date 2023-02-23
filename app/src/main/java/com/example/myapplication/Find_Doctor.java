@@ -23,7 +23,7 @@ public class Find_Doctor extends AppCompatActivity {
             public void onClick(View view) {
                 try {
                     Intent intent = new Intent(Find_Doctor.this,Doctor_Details.class);
-                    intent.putExtra("title","family_physician");
+                    intent.putExtra("title","FAMILY PHYSICIAN");
                     startActivity(intent);
                 }
                 catch (Exception e)
@@ -41,7 +41,7 @@ public class Find_Doctor extends AppCompatActivity {
             public void onClick(View view) {
                 try {
                     Intent intent = new Intent(Find_Doctor.this,Doctor_Details.class);
-                    intent.putExtra("title","dietician");
+                    intent.putExtra("title","D I E T I C I A N");
                     startActivity(intent);
                 }
                 catch (Exception e)
@@ -60,7 +60,7 @@ public class Find_Doctor extends AppCompatActivity {
                try
                {
                    Intent intent = new Intent(Find_Doctor.this,Doctor_Details.class);
-                   intent.putExtra("title","dentist");
+                   intent.putExtra("title","D E N T I S T");
                    startActivity(intent);
                }
                catch (Exception e)
@@ -78,7 +78,7 @@ public class Find_Doctor extends AppCompatActivity {
             public void onClick(View view) {
                 try {
                     Intent intent = new Intent(Find_Doctor.this,Doctor_Details.class);
-                    intent.putExtra("title","surgeon");
+                    intent.putExtra("title"," S U R G E O N ");
                     startActivity(intent);
                 }
                 catch (Exception e)
@@ -98,7 +98,7 @@ public class Find_Doctor extends AppCompatActivity {
                try
                {
                    Intent intent = new Intent(Find_Doctor.this,Doctor_Details.class);
-                   intent.putExtra("title","Heart_Specialist");
+                   intent.putExtra("title","H E A R T  S P E C I L I S T");
                    startActivity(intent);
                }
                catch (Exception e)
@@ -116,7 +116,7 @@ public class Find_Doctor extends AppCompatActivity {
             public void onClick(View view) {
                 try {
                     Intent intent = new Intent(Find_Doctor.this,Doctor_Details.class);
-                    intent.putExtra("title","venereologist");
+                    intent.putExtra("title","V E N E R E O L O G I S T");
                     startActivity(intent);
                 }
                 catch (Exception e)
