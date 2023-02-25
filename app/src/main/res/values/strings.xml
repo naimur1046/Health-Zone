@@ -1,7 +1,7 @@
 <resources>
     //login strings
     <string name="app_name">My Application</string>
-    <string name="app"> 24/7      Health Care</string>
+    <string name="app"> 24/7 Health Care</string>
     <string name="login"> Login Please</string>
     <string name="username">  User Name </string>
     <string name="password">  Password </string>
@@ -46,4 +46,5 @@
     <string name="blood_doner"> Blood Doner </string>
     <string name="choice_a_option"> Choice a Option </string>
     <string name="normal_user"> Normal User </string>
+    <string name="medicine_shop"> Medicine Shopowner </string>
 </resources>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -10,13 +10,20 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="204dp"
-        android:layout_height="36dp"
+        android:layout_width="239dp"
+        android:layout_height="38dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80sp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="92dp"
         android:fontFamily="@font/croissant_one"
         android:text="@string/welcome_to"
         android:textAlignment="center"
         android:textColor="#FFEB3B"
-        android:textSize="30sp"
+        android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -26,62 +33,81 @@
 
     <TextView
         android:id="@+id/appname"
-        android:layout_width="330dp"
-        android:layout_height="63dp"
+        android:layout_width="388dp"
+        android:layout_height="72dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="4dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="71dp"
+        android:layout_marginEnd="19dp"
         android:fontFamily="@font/croissant_one"
         android:paddingTop="10sp"
         android:text="@string/homeappname"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
-        android:textSize="34sp"
+        android:textSize="40sp"
         android:verticalScrollbarPosition="defaultPosition"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.009" />
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="24dp"
+    <RelativeLayout
+        android:layout_width="453dp"
+        android:layout_height="579dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5sp"
+        android:layout_marginTop="170dp"
+        android:layout_marginRight="5sp"
         android:background="@drawable/bottom_background_light_green"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
+
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/appname"
         app:layout_constraintVertical_bias="1.0">
 
         <TextView
             android:id="@+id/textView3"
-            android:layout_width="293dp"
-            android:layout_height="49dp"
-            android:layout_marginTop="52dp"
+            android:layout_width="375dp"
+            android:layout_height="62dp"
+            android:layout_marginStart="5sp"
+            android:layout_marginTop="20sp"
+            android:layout_marginEnd="5sp"
+            android:layout_marginBottom="5sp"
             android:fontFamily="@font/amethysta"
             android:text="@string/choice_a_option"
             android:textAlignment="center"
             android:textColor="#054A68"
-            android:textSize="30sp"
+            android:textSize="34sp"
             android:textStyle="bold|italic"
+            app:drawableLeftCompat="@drawable/tick"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.555"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.055" />
 
         <TableLayout
-            android:layout_width="411dp"
-            android:layout_height="424dp"
-            android:layout_marginTop="32dp"
+            android:layout_width="match_parent"
+            android:layout_height="447dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="90dp"
+            android:layout_marginBottom="47dp"
+            android:accessibilityTraversalBefore="@id/textView3"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView3">
+            app:layout_constraintVertical_bias="1.0">
 
             <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:id="@+id/normal_user"
+                android:layout_width="394dp"
+                android:layout_height="60dp"
                 android:layout_margin="10dp"
                 android:background="@drawable/white_button_background">
 
@@ -89,14 +115,14 @@
                     android:id="@+id/new_user_normal_user_photo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="5sp"
+                    android:layout_marginLeft="8sp"
                     android:layout_marginTop="8sp"
                     app:srcCompat="@drawable/user_2_svgrepo_com" />
 
                 <TextView
                     android:id="@+id/new_user_normal_user_text"
                     android:layout_width="289dp"
-                    android:layout_height="92dp"
+                    android:layout_height="78dp"
                     android:layout_marginLeft="20sp"
                     android:fontFamily="@font/amethysta"
                     android:gravity="center_vertical"
@@ -123,17 +149,72 @@
                 <TextView
                     android:id="@+id/new_user_doctor_text"
                     android:layout_width="290dp"
-                    android:layout_height="82dp"
+                    android:layout_height="88dp"
                     android:layout_marginLeft="20sp"
                     android:fontFamily="@font/amethysta"
                     android:gravity="center_vertical"
-                    android:text="@string/normal_user"
+                    android:text="@string/doctor"
                     android:textColor="#E5FCFD"
                     android:textSize="34sp"
                     android:textStyle="bold" />
             </TableRow>
 
-        </TableLayout>
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="@drawable/white_button_background">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+                <ImageView
+                    android:id="@+id/new_user_medicalshop_image"
+                    android:layout_width="85dp"
+                    android:layout_height="76dp"
+                    android:layout_marginLeft="8sp"
+                    android:layout_marginTop="5sp"
+                    app:srcCompat="@drawable/blood_plus_svgrepo_com" />
+
+                <TextView
+                    android:id="@+id/new_user_medicalshop_text"
+                    android:layout_width="290dp"
+                    android:layout_height="88dp"
+                    android:layout_marginLeft="20sp"
+                    android:fontFamily="@font/amethysta"
+                    android:gravity="center_vertical"
+                    android:text="@string/blood"
+                    android:textColor="#E5FCFD"
+                    android:textSize="34sp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="@drawable/white_button_background">
+
+                <ImageView
+                    android:id="@+id/new_user_blood_image"
+                    android:layout_width="85dp"
+                    android:layout_height="76dp"
+                    android:layout_marginLeft="8sp"
+                    android:layout_marginTop="5sp"
+                    app:srcCompat="@drawable/shop" />
+
+                <TextView
+                    android:id="@+id/new_user_blood_text"
+                    android:layout_width="290dp"
+                    android:layout_height="88dp"
+                    android:layout_marginLeft="20sp"
+                    android:fontFamily="@font/amethysta"
+                    android:gravity="center_vertical"
+                    android:text="@string/medicine_shop"
+                    android:textColor="#E5FCFD"
+                    android:textSize="34sp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+
+        </TableLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
