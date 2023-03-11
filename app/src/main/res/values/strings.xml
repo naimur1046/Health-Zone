@@ -47,4 +47,7 @@
     <string name="choice_a_option"> Choice a Option </string>
     <string name="normal_user"> Normal User </string>
     <string name="medicine_shop"> Medicine Shopowner </string>
+    
+    //Doctor Register
+    <string name="Doctor_Categoary"> Doctor Category </string>
 </resources>
