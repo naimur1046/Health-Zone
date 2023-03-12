@@ -47,7 +47,14 @@
     <string name="choice_a_option"> Choice a Option </string>
     <string name="normal_user"> Normal User </string>
     <string name="medicine_shop"> Medicine Shopowner </string>
-    
-    //Doctor Register
+
+    //Activity Doctor Register
     <string name="Doctor_Categoary"> Doctor Category </string>
+    <string name="doctor_register"> Doctor Register </string>
+    <string name="choice_photo"> Choice Your Photo </string>
+
+
+    //Blood Doner
+    <string name="thanks"> Thanks for </string>
+    <string name="donating">DONATING BLOOD</string>
 </resources>

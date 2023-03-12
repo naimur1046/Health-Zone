@@ -133,6 +133,7 @@
             </TableRow>
 
             <TableRow
+                android:id="@+id/doctor_new_user_row"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="10dp"
@@ -160,6 +161,7 @@
             </TableRow>
 
             <TableRow
+                android:id="@+id/blood_doner_new_user"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="10dp"
@@ -187,6 +189,7 @@
             </TableRow>
 
             <TableRow
+                android:id="@+id/medicalshop_owner_new_user"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="10dp"
