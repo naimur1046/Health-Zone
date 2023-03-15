@@ -5,24 +5,17 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
-import com.google.firebase.auth.AuthResult;
-import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-
-import java.util.regex.Pattern;
 
 public class Register_Activity extends AppCompatActivity {
     EditText edName,edPassword,edConfirmPassword,edEmail,edPhoneNumber;
@@ -38,13 +31,13 @@ public class Register_Activity extends AppCompatActivity {
         setContentView(R.layout.activity_register);
 
         databaseReferenceforuser=FirebaseDatabase.getInstance().getReferenceFromUrl("https://health-zone-379113-default-rtdb.firebaseio.com/");
-        edName=findViewById(R.id.userName);
-        edPassword=findViewById(R.id.password);
-        edConfirmPassword=findViewById(R.id.confirm_password);
+        edName=findViewById(R.id.username_blood_doner_registration);
+        edPassword=findViewById(R.id.blood_group_blood_doner_registration);
+        edConfirmPassword=findViewById(R.id.mobile_bood_donar_registration);
         edEmail=findViewById(R.id.email);
-        edPhoneNumber=findViewById(R.id.phone_number);
-        btn=findViewById(R.id.register_button);
-        bottomText=findViewById(R.id.bottom_text);
+        edPhoneNumber=findViewById(R.id.phone_number_doctor_registration);
+        btn=findViewById(R.id.register_blood_doner_registration);
+        bottomText=findViewById(R.id.already_have_an_account);
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override

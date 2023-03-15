@@ -6,26 +6,22 @@
     android:layout_margin="5dp"
     android:background="#F7F5EB"
     android:orientation="vertical"
-    android:padding="10dp">
+    android:padding="5dp">
 
     <LinearLayout
+        android:id="@+id/sample_layout_for_doctor_details"
         android:layout_width="match_parent"
         android:layout_height="97dp"
         android:background="@drawable/bg_for_dotor_select"
         android:orientation="horizontal">
 
-        <TextView
-            android:id="@+id/blood_group_sample_layout"
-            android:layout_width="79dp"
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="170dp"
             android:layout_height="match_parent"
-            android:layout_gravity="center"
             android:layout_weight="1"
-            android:fontFamily="@font/abril_fatface"
-            android:gravity="center"
-            android:text="A+"
-            android:textColor="#E21818"
-            android:textSize="50sp"
-            android:textStyle="bold" />
+            android:padding="3dp"
+            app:srcCompat="@drawable/male_doctor" />
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -34,25 +30,36 @@
 
             <TextView
                 android:id="@+id/name_of_doctor_sample_layout"
-                android:layout_width="match_parent"
+                android:layout_width="251dp"
 
-                android:layout_height="56dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
                 android:fontFamily="@font/adamina"
                 android:gravity="start|center_vertical"
                 android:text="Naimur Rathman"
-                android:textColor="#804674"
-                android:textSize="24sp"
+                android:textColor="@color/DeepPink"
+                android:textSize="26sp"
                 android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/details_of_doctor_sample_layout"
-                android:layout_width="271dp"
-                android:layout_height="46dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:fontFamily="@font/adamina"
                 android:gravity="start"
                 android:text=" 20 years"
                 android:textColor="#804674"
-                android:textSize="20sp"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/doctor_contact_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/adamina"
+                android:text="TextView"
+                android:textColor="#804674"
+                android:textSize="18dp"
                 android:textStyle="bold" />
         </LinearLayout>
     </LinearLayout>

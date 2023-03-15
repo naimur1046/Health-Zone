@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1DB7AE"
+    tools:context=".Lab_Test_Details">
+
+    <TextView
+        android:id="@+id/titletext_lab_test"
+        android:layout_width="333dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="20dp"
+        android:text="          To confirm order, please
+         provide the following information"
+        android:textColor="@color/white"
+        android:textColorLink="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBMDTotalCost" />
+
+    <Button
+        android:id="@+id/buttonLTDConfirmOrder"
+        android:layout_width="278dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="39dp"
+        android:text="CONFIRM ORDER"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adress_labtest_details" />
+
+    <EditText
+        android:id="@+id/adress_labtest_details"
+        android:layout_width="316dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginEnd="95dp"
+        android:cursorVisible="false"
+        android:hint="@string/adress_buy_medicine_details"
+        android:inputType="textVisiblePassword|textPassword"
+        android:paddingStart="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mobile_lab_test" />
+
+    <TextView
+        android:id="@+id/titletext_book_appoinment_details"
+        android:layout_width="296dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="13dp"
+        android:gravity="center"
+        android:text="Full Body Checkup"
+        android:textColor="@color/white"
+        android:textColorLink="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_logo" />
+
+    <TextView
+        android:id="@+id/textView_logo"
+        android:layout_width="304dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="28dp"
+        android:gravity="center"
+        android:text="24/7 Healthcare"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.448"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewBMDTotalCost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="1000/-"
+        android:textColor="@color/purple_200"
+        android:textColorLink="#FFFFFF"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.433"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titletext_book_appoinment_details" />
+
+    <EditText
+        android:id="@+id/name_labtest_details"
+        android:layout_width="302dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="95dp"
+        android:cursorVisible="false"
+        android:hint="@string/username"
+        android:inputType="textVisiblePassword|textPassword"
+        android:paddingStart="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titletext_lab_test" />
+
+    <EditText
+        android:id="@+id/mobile_lab_test"
+        android:layout_width="320dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="95dp"
+        android:cursorVisible="false"
+        android:hint="@string/mobile"
+        android:inputType="textVisiblePassword|textPassword"
+        android:paddingStart="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name_labtest_details" />
+
+    <Button
+        android:id="@+id/exit_book_apoinment"
+        android:layout_width="189dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="28dp"
+        android:text="BACK"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLTDConfirmOrder" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

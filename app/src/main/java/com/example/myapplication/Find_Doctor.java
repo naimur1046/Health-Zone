@@ -6,7 +6,6 @@ import androidx.cardview.widget.CardView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.GridView;
 
 public class Find_Doctor extends AppCompatActivity {
 
@@ -17,7 +16,7 @@ public class Find_Doctor extends AppCompatActivity {
 
         // This section is for family physician entry
 
-        CardView family_physician = findViewById(R.id.family_physician);
+        CardView family_physician = findViewById(R.id.labtest_home_activity);
         family_physician.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

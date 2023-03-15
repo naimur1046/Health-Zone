@@ -48,7 +48,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <EditText
-        android:id="@+id/confirm_password"
+        android:id="@+id/mobile_bood_donar_registration"
         android:layout_width="311dp"
         android:layout_height="60dp"
         android:layout_marginStart="112dp"
@@ -61,6 +61,7 @@
         android:paddingStart="10dp"
         android:paddingLeft="10dp"
         android:paddingTop="10dp"
+        android:textColor="#FFFFFF"
         android:textColorHint="#FFFFFF"
         android:textSize="30sp"
         android:textStyle="bold"
@@ -69,11 +70,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.576"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/userName"
+        app:layout_constraintTop_toBottomOf="@+id/username_blood_doner_registration"
         app:layout_constraintVertical_bias="0.0" />
 
     <EditText
-        android:id="@+id/userName"
+        android:id="@+id/username_blood_doner_registration"
         android:layout_width="311dp"
         android:layout_height="59dp"
         android:layout_marginStart="112dp"
@@ -86,6 +87,7 @@
         android:paddingStart="10dp"
         android:paddingLeft="10dp"
         android:paddingTop="10dp"
+        android:textColor="#FFFFFF"
         android:textColorHint="#FFFFFF"
         android:textSize="30sp"
         android:textStyle="bold"
@@ -117,12 +119,14 @@
         android:layout_height="74dp"
         android:layout_marginTop="36dp"
         android:text="@string/log"
+        android:textColor="#E31212"
         android:textSize="28sp"
+        android:theme="@style/Platform.MaterialComponents.Light"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.468"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/confirm_password"
+        app:layout_constraintTop_toBottomOf="@+id/mobile_bood_donar_registration"
         app:layout_constraintVertical_bias="0.0" />
 
 

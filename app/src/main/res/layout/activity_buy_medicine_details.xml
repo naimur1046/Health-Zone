@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1DB7AE"
+    tools:context=".Buy_Medicine_Details">
+
+
+    <TextView
+        android:id="@+id/textViewBMDTitleText"
+        android:layout_width="333dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/title_text_buy_medicine_details"
+        android:textColor="@color/white"
+        android:textColorLink="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBMDTotalCost" />
+
+    <Button
+        android:id="@+id/conirm_appoinment_book_apoinment"
+        android:layout_width="269dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/confirm_order_buy_medicine_details"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.614"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adress_book_apoinment" />
+
+    <EditText
+        android:id="@+id/adress_book_apoinment"
+        android:layout_width="308dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="95dp"
+        android:cursorVisible="false"
+        android:hint="@string/adress_buy_medicine_details"
+        android:inputType="text"
+        android:paddingStart="5dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mobile_book_apoinment" />
+
+    <TextView
+        android:id="@+id/titletext_book_appoinment_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Buy Medicine"
+        android:textColor="@color/white"
+        android:textColorLink="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_logo" />
+
+    <TextView
+        android:id="@+id/textView_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="24/7 Healthcare"
+        android:textColor="@color/purple_200"
+        android:textColorLink="#FFFFFF"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewBMDTotalCost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"
+        android:text="24/7 Healthcare"
+        android:textColor="@color/purple_200"
+        android:textColorLink="#FFFFFF"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.551"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titletext_book_appoinment_details" />
+
+    <EditText
+        android:id="@+id/name_book_apointment"
+        android:layout_width="308dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="95dp"
+        android:cursorVisible="false"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:paddingStart="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBMDTitleText" />
+
+    <EditText
+        android:id="@+id/mobile_book_apoinment"
+        android:layout_width="308dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="95dp"
+        android:cursorVisible="false"
+        android:hint="Mobile"
+        android:inputType="text"
+        android:paddingStart="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name_book_apointment" />
+
+    <Button
+        android:id="@+id/exit_book_apoinment"
+        android:layout_width="165dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="28dp"
+        android:text="@string/exit"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/conirm_appoinment_book_apoinment" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

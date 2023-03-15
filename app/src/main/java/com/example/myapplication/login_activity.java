@@ -24,8 +24,6 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-import okhttp3.internal.cache.DiskLruCache;
-
 public class login_activity extends AppCompatActivity {
 
     DatabaseReference databaseReferenceforlogin;
@@ -40,8 +38,8 @@ public class login_activity extends AppCompatActivity {
 
 
         databaseReferenceforlogin=FirebaseDatabase.getInstance().getReferenceFromUrl("https://health-zone-379113-default-rtdb.firebaseio.com/");
-        edUsername=findViewById(R.id.userName);
-        edPassword=findViewById(R.id.confirm_password);
+        edUsername=findViewById(R.id.username_blood_doner_registration);
+        edPassword=findViewById(R.id.mobile_bood_donar_registration);
         login=findViewById(R.id.button1);
         register=findViewById(R.id.bolttom);
 

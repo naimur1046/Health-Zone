@@ -9,13 +9,14 @@
     tools:context=".Register_Activity">
 
     <EditText
-        android:id="@+id/doctor_category"
-        android:layout_width="334dp"
+        android:id="@+id/blood_group"
+        android:layout_width="306dp"
         android:layout_height="50dp"
         android:layout_marginStart="112dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="95dp"
         android:background="@drawable/input_bg"
+        android:drawableLeft="@android:drawable/checkbox_on_background"
         android:fontFamily="@font/artifika"
         android:hint="@string/Doctor_Categoary"
         android:inputType="textVisiblePassword|textPassword"
@@ -26,32 +27,15 @@
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.469"
+        app:layout_constraintHorizontal_bias="0.59"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/doctor_image" />
-
-    <TextView
-        android:id="@+id/choice_photo"
-        android:layout_width="200dp"
-        android:layout_height="33dp"
-        android:layout_marginTop="14dp"
-        android:background="@drawable/bg_for_dotor_select"
-        android:fontFamily="@font/andika_new_basic"
-        android:text="@string/choice_photo"
-        android:textAlignment="center"
-        android:textColor="#362FD9"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.563"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/confirm_password" />
+        app:layout_constraintTop_toBottomOf="@+id/doctor_schedule_doctor_register" />
 
     <EditText
-        android:id="@+id/password"
-        android:layout_width="310dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="8dp"
+        android:id="@+id/blood_group_blood_doner_registration"
+        android:layout_width="311dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="17dp"
         android:background="@drawable/input_bg"
         android:contextClickable="false"
         android:fontFamily="@font/artifika"
@@ -65,33 +49,32 @@
         android:textStyle="bold"
         app:drawableLeftCompat="@drawable/ic_baseline_security_24"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.57"
+        app:layout_constraintHorizontal_bias="0.58"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/userName" />
+        app:layout_constraintTop_toBottomOf="@+id/username_blood_doner_registration" />
 
     <TextView
         android:id="@+id/top_text"
         android:layout_width="391dp"
         android:layout_height="59dp"
+        android:layout_marginTop="28dp"
         android:fontFamily="@font/croissant_one"
         android:text="@string/doctor_register"
         android:textAlignment="center"
         android:textColor="#FDFDFD"
         android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.8"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.025" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/userName"
+        android:id="@+id/username_blood_doner_registration"
         android:layout_width="308dp"
         android:layout_height="48dp"
         android:layout_marginStart="112dp"
+        android:layout_marginTop="28dp"
         android:layout_marginEnd="95dp"
-        android:layout_marginBottom="596dp"
         android:background="@drawable/input_bg"
         android:cursorVisible="false"
         android:drawableLeft="@drawable/ic_baseline_person_24"
@@ -104,16 +87,17 @@
         android:textColorHint="#FFFFFF"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.586"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.519"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/top_text" />
 
     <EditText
-        android:id="@+id/confirm_password"
-        android:layout_width="317dp"
-        android:layout_height="46dp"
+        android:id="@+id/mobile_bood_donar_registration"
+        android:layout_width="295dp"
+        android:layout_height="51dp"
         android:layout_marginStart="112dp"
+        android:layout_marginTop="10dp"
         android:layout_marginEnd="95dp"
         android:background="@drawable/input_bg"
         android:fontFamily="@font/artifika"
@@ -125,29 +109,96 @@
         android:textSize="18sp"
         android:textStyle="bold"
         app:drawableLeftCompat="@drawable/ic_baseline_security_24"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.477"
+        app:layout_constraintHorizontal_bias="0.648"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/password"
-        app:layout_constraintVertical_bias="0.018" />
+        app:layout_constraintTop_toBottomOf="@+id/blood_group_blood_doner_registration" />
+
+    <EditText
+        android:id="@+id/phone_number_doctor_registration"
+        android:layout_width="302dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="95dp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@android:drawable/stat_sys_phone_call"
+        android:fontFamily="@font/artifika"
+        android:hint="@string/Register_mobile"
+        android:paddingStart="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.551"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mobile_bood_donar_registration" />
+
+    <EditText
+        android:id="@+id/doctor_schedule_doctor_register"
+        android:layout_width="305dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="95dp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@android:drawable/ic_menu_my_calendar"
+        android:fontFamily="@font/artifika"
+        android:hint="@string/schedule_of_doctor"
+        android:paddingStart="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.594"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/doctor_chember_doctor_register" />
+
+    <EditText
+        android:id="@+id/doctor_chember_doctor_register"
+        android:layout_width="299dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="95dp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@android:drawable/ic_dialog_dialer"
+        android:fontFamily="@font/artifika"
+        android:hint="@string/doctor_chember"
+        android:paddingStart="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.621"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phone_number_doctor_registration" />
 
     <Button
-        android:id="@+id/register_button"
+        android:id="@+id/register_blood_doner_registration"
         android:layout_width="172dp"
         android:layout_height="50dp"
-        android:layout_marginBottom="84dp"
+        android:layout_marginTop="20dp"
         android:text="@string/Register"
         android:textColor="#B3005E"
         android:textStyle="bold"
         android:theme="@style/Platform.MaterialComponents.Light"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/blood_group" />
 
     <TextView
-        android:id="@+id/bottom_text"
+        android:id="@+id/already_have_an_account"
         android:layout_width="357dp"
         android:layout_height="40dp"
         android:fontFamily="@font/andika_new_basic"
@@ -158,19 +209,9 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.569"
+        app:layout_constraintHorizontal_bias="0.296"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/register_button" />
-
-    <ImageView
-        android:id="@+id/doctor_image"
-        android:layout_width="321dp"
-        android:layout_height="208dp"
-        android:layout_marginTop="15dp"
-        android:scaleType="centerCrop"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/choice_photo"
-        app:srcCompat="@drawable/cardiologists" />
+        app:layout_constraintTop_toBottomOf="@+id/register_blood_doner_registration"
+        app:layout_constraintVertical_bias="0.686" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

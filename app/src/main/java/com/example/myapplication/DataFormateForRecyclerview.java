@@ -4,38 +4,46 @@ import android.widget.ImageView;
 
 public class DataFormateForRecyclerview
 {
-    ImageView imageView;
+    String bloodgroup;
     String name;
-    String details;
-
-    public DataFormateForRecyclerview(ImageView imageView, String name, String details) {
-        this.imageView = imageView;
+    String lastdonation;
+    String mobilenumber;
+    public DataFormateForRecyclerview(String bloodgroup, String name, String lastdonation, String mobilenumber) {
+        this.bloodgroup = bloodgroup;
         this.name = name;
-        this.details = details;
+        this.lastdonation = lastdonation;
+        this.mobilenumber = mobilenumber;
     }
 
-
-    public ImageView getImageView() {
-        return imageView;
+    public String getBloodgroup() {
+        return bloodgroup;
     }
 
     public String getName() {
         return name;
     }
 
-    public String getDetails() {
-        return details;
+    public String getLastdonation() {
+        return lastdonation;
     }
 
-    public void setImageView(ImageView imageView) {
-        this.imageView = imageView;
+    public String getMobilenumber() {
+        return mobilenumber;
+    }
+
+    public void setBloodgroup(String bloodgroup) {
+        this.bloodgroup = bloodgroup;
     }
 
     public void setName(String name) {
         this.name = name;
     }
 
-    public void setDetails(String details) {
-        this.details = details;
+    public void setLastdonation(String lastdonation) {
+        this.lastdonation = lastdonation;
+    }
+
+    public void setMobilenumber(String mobilenumber) {
+        this.mobilenumber = mobilenumber;
     }
 }

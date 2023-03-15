@@ -52,9 +52,27 @@
     <string name="Doctor_Categoary"> Doctor Category </string>
     <string name="doctor_register"> Doctor Register </string>
     <string name="choice_photo"> Choice Your Photo </string>
+    <string name="doctor_chember"> Doctor Chember </string>
+    <string name="schedule_of_doctor"> Schedule of Doctor </string>
+    <string name="get_service_from"> Get Service From </string>
 
 
     //Blood Doner
     <string name="thanks"> Thanks for </string>
     <string name="donating">DONATING BLOOD</string>
+    <string name="blood_doner_registration">Blood Donor Registration </string>
+    <string name="last_donation"> Last Donation </string>
+    <string name="mobile"> Mobile </string>
+    <string name="blood_group"> Blood Group </string>
+
+    //Buy Medicine
+    <string name="title_text_buy_medicine_details">        To confirm order,     please provide the following information </string>
+    <string name="confirm_order_buy_medicine_details"> CONFIRM ORDER </string>
+    <string name="adress_buy_medicine_details">Address</string>
+
+    // Book Apointment Details
+    <string name="book_apointment"> Book Apointment </string>
+    <string name="to_confirm"> Provide Required Information </string>
+    <string name="confirm_appinment"> Confirm Appoinment </string>
+
 </resources>
