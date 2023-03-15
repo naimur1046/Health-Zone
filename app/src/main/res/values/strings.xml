@@ -1,14 +1,13 @@
 <resources>
     //login strings
     <string name="app_name">My Application</string>
-    <string name="app"> 24/7 Health Care</string>
+    <string name="app"> 24/7      Health Care</string>
     <string name="login"> Login Please</string>
     <string name="username">  User Name </string>
     <string name="password">  Password </string>
     <string name="log">LOgIn</string>
     <string name="bottom"> Register for New User</string>
     <string name="confirm_password"> Confirm Password</string>
-    <string name="homeappname"> 24/7  Health Care </string>
 
     // Register Strings
     <string name="Register_register"> Registration </string>
@@ -16,35 +15,4 @@
     <string name="Register_mobile"> Phone Number </string>
     <string name="Register"> R E G I S T E R </string>
     <string name="register_bottom">  Already have an account? </string>
-
-    // Home Activity Strings
-    <string name="labtest"> Lab Test </string>
-    <string name="buymedicine"> Buy Medicine </string>
-    <string name="finddoctor"> Find Doctor </string>
-    <string name="healtharticle"> Health Article </string>
-    <string name="orderdetail"> Order Details </string>
-    <string name="blood"> Blood Donar </string>
-    <string name="exit"> E X I T </string>
-    <string name="four"> 4 </string>
-
-    // Find Doctor
-    <string name="top_doctor"> T o p  D o c t o r s </string>
-    <string name="family_physicain"> Family Physician </string>
-    <string name="dentist"> Dentist </string>
-    <string name="surgeon"> Surgeon </string>
-    <string name="heart_specialist"> Heart Specialist </string>
-    <string name="venereologist"> venereologist </string>
-    <string name="dietician"> Dietician </string>
-
-    // activity doctor details
-    <string name="defeault_text"> D e f e u l t   T e x t </string>
-
-    // New user
-    <string name="welcome_to"> Welcome to </string>
-    <string name="regular_user"> Regular User </string>
-    <string name="doctor"> Doctor </string>
-    <string name="blood_doner"> Blood Doner </string>
-    <string name="choice_a_option"> Choice a Option </string>
-    <string name="normal_user"> Normal User </string>
-    <string name="medicine_shop"> Medicine Shopowner </string>
 </resources>

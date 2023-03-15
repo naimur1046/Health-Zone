@@ -32,7 +32,7 @@ public class Register_Activity extends AppCompatActivity {
                 String ConfirmPassword=edConfirmPassword.getText().toString();
                 String email=edEmail.getText().toString();
                 String Phone_Number=edPhoneNumber.getText().toString();
-                Database db= new  Database(getApplicationContext());
+                Database db= new  Database(getApplicationContext(),"Health_Zone",null,1);
                 if(username.length()==0||password.length()==0||ConfirmPassword.length()==0||email.length()==0||Phone_Number.length()==0)
                 {
                    bottomText.setText("Fill all the field");
@@ -45,7 +45,7 @@ public class Register_Activity extends AppCompatActivity {
                     }
                     else
                     {
-                        db.register(username,password,email,Phone_Number);
+                        db.register(username.toString(),email.toString(),password.toString(),Phone_Number.toString());
                         bottomText.setText("Already Have an Acoount?");
                     }
                 }
