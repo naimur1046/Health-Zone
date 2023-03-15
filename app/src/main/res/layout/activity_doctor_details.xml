@@ -1,81 +1,110 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/medical_background_1"
-    tools:context=".Doctor_Details">
+    android:background="#1DB7AE"
+    tools:context=".New_User">
 
     <TextView
-        android:id="@+id/appname"
-        android:layout_width="361dp"
-        android:layout_height="58dp"
+        android:id="@+id/get_service_from"
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
+        android:layout_marginStart="29dp"
+        android:layout_marginLeft="80sp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="48dp"
         android:fontFamily="@font/croissant_one"
-        android:paddingTop="10sp"
-        android:text="@string/homeappname"
+        android:text="@string/get_service_from"
         android:textAlignment="center"
-        android:textColor="#F8F1FF"
+        android:textColor="#FFEB3B"
         android:textSize="34sp"
-        android:textStyle="bold"
-        android:verticalScrollbarPosition="defaultPosition"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.68"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.023" />
 
     <TextView
         android:id="@+id/title_text"
-        android:layout_width="380dp"
-        android:layout_height="35dp"
-        android:layout_below="@id/appname"
+        android:layout_width="362dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/get_service_from"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="28dp"
         android:text="@string/defeault_text"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
-        android:textSize="28sp"
+        android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/appname"
         app:layout_constraintVertical_bias="0.0" />
 
-    <ListView
-        android:id="@+id/listview_doctor_details"
-        android:layout_width="348dp"
-        android:layout_height="450dp"
-        android:layout_margin="10dp"
-        android:layout_marginTop="4dp"
+    <RelativeLayout
+        android:id="@+id/layout_for_doctor_list"
+        android:layout_width="406dp"
+        android:layout_height="483dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5sp"
+        android:layout_marginTop="170dp"
+        android:layout_marginRight="5sp"
+        android:background="@drawable/bottom_background_light_green"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.111"
+
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/title_text"
-        app:layout_constraintVertical_bias="0.013" />
+        app:layout_constraintVertical_bias="1.0">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview_doctor_details"
+            android:layout_width="match_parent"
+            android:layout_height="485dp"
+
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bottom_background_light_green"
+            android:divider="#FF4567"
+            android:padding="10dp"
+            android:paddingTop="10dp" />
+    </RelativeLayout>
 
     <Button
         android:id="@+id/doctor_details_exit_button"
-        android:layout_width="182dp"
-        android:layout_height="53dp"
+        android:layout_width="wrap_content"
+        android:layout_height="63dp"
+        android:layout_below="@id/layout_for_doctor_list"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="53dp"
+        android:layout_marginBottom="7dp"
         android:fontFamily="@font/abril_fatface"
         android:text="@string/exit"
         android:textColor="#B05A7A"
         android:textSize="20sp"
         android:textStyle="bold"
         android:theme="@style/Platform.MaterialComponents.Light"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/listview_doctor_details"
-        app:layout_constraintVertical_bias="0.674" />
+        tools:layout_editor_absoluteX="114dp" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>
+
+
+
+
+
+
+
+
+

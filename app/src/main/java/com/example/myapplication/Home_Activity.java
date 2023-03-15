@@ -21,6 +21,11 @@ public class Home_Activity extends AppCompatActivity {
         Toast.makeText(this, ""+username, Toast.LENGTH_SHORT).show();
 
         CardView exit = findViewById(R.id.exit);
+        CardView find_doctor = findViewById(R.id.find_doctor_home_activity);
+        CardView blood_doner = findViewById(R.id.blood_doner_home_activity);
+        CardView health_article=findViewById(R.id.Health_Article);
+        CardView buy_medicine=findViewById(R.id.buy_medicine);
+        CardView labtest = findViewById(R.id.labtest_home_activity);
         exit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -31,11 +36,40 @@ public class Home_Activity extends AppCompatActivity {
             }
         });
 
-        CardView find_doctor = findViewById(R.id.Find_Doctor);
+
         find_doctor.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(Home_Activity.this,Find_Doctor.class));
+            }
+        });
+
+        blood_doner.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(Home_Activity.this, com.example.myapplication.blood_doner.class));
+            }
+        });
+        health_article.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(Home_Activity.this,Health_Articles.class));
+            }
+        });
+
+        buy_medicine.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view)
+            {
+                startActivity(new Intent(Home_Activity.this,Buy_Medicine.class));
+
+            }
+        });
+
+        labtest.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(Home_Activity.this,Lab_Test.class));
             }
         });
 

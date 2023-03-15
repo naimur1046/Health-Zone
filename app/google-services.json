@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "456222988713",
+    "project_id": "health-zone-379113",
+    "storage_bucket": "health-zone-379113.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:456222988713:android:cf6d50057de44a8c1c0cb8",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "456222988713-quls1s9este7i3rohii746laicbk7t7g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA65wbx0cUVByvm2GLxA64Z1m-Cn2comuk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "456222988713-quls1s9este7i3rohii746laicbk7t7g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

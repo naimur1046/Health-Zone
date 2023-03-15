@@ -9,17 +9,17 @@
     tools:context=".Register_Activity">
 
     <EditText
-        android:id="@+id/password"
+        android:id="@+id/blood_group_blood_doner_registration"
         android:layout_width="283dp"
         android:layout_height="52dp"
         android:background="@drawable/input_bg"
         android:contextClickable="false"
         android:fontFamily="@font/artifika"
         android:freezesText="false"
+        android:hint="@string/password"
         android:inputType="textVisiblePassword|textPassword"
         android:paddingTop="5dp"
-        android:text="@string/password"
-        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
         android:textSize="18sp"
         android:textStyle="bold"
         app:drawableLeftCompat="@drawable/ic_baseline_security_24"
@@ -27,7 +27,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.51"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/userName"
+        app:layout_constraintTop_toBottomOf="@+id/username_blood_doner_registration"
         app:layout_constraintVertical_bias="0.044" />
 
     <TextView
@@ -64,20 +64,22 @@
         app:layout_constraintVertical_bias="0.153" />
 
     <EditText
-        android:id="@+id/userName"
+        android:id="@+id/username_blood_doner_registration"
         android:layout_width="300dp"
         android:layout_height="51dp"
         android:layout_marginStart="112dp"
         android:layout_marginEnd="95dp"
         android:layout_marginBottom="380dp"
         android:background="@drawable/input_bg"
+        android:cursorVisible="false"
         android:drawableLeft="@drawable/ic_baseline_person_24"
         android:fontFamily="@font/artifika"
+        android:hint="@string/username"
         android:paddingStart="10dp"
         android:paddingLeft="10dp"
         android:paddingTop="5dp"
-        android:text="@string/username"
         android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -88,7 +90,7 @@
         app:layout_constraintVertical_bias="0.318" />
 
     <EditText
-        android:id="@+id/phone_number"
+        android:id="@+id/phone_number_doctor_registration"
         android:layout_width="304dp"
         android:layout_height="51dp"
         android:layout_marginStart="112dp"
@@ -97,11 +99,12 @@
         android:background="@drawable/input_bg"
         android:drawableLeft="@android:drawable/stat_sys_phone_call"
         android:fontFamily="@font/artifika"
+        android:hint="@string/Register_mobile"
         android:paddingStart="10dp"
         android:paddingLeft="10dp"
         android:paddingTop="5dp"
-        android:text="@string/Register_mobile"
         android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -120,33 +123,35 @@
         android:background="@drawable/input_bg"
         android:drawableLeft="@drawable/ic_baseline_email_24"
         android:fontFamily="@font/artifika"
+        android:hint="@string/Register_email"
         android:inputType="textWebEmailAddress"
         android:paddingStart="10dp"
         android:paddingLeft="10dp"
         android:paddingTop="5dp"
-        android:text="@string/Register_email"
         android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.579"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/confirm_password"
+        app:layout_constraintTop_toBottomOf="@+id/mobile_bood_donar_registration"
         app:layout_constraintVertical_bias="0.093" />
 
     <EditText
-        android:id="@+id/confirm_password"
+        android:id="@+id/mobile_bood_donar_registration"
         android:layout_width="285dp"
         android:layout_height="48dp"
         android:layout_marginStart="112dp"
         android:layout_marginEnd="95dp"
         android:background="@drawable/input_bg"
         android:fontFamily="@font/artifika"
+        android:hint="@string/confirm_password"
         android:inputType="textVisiblePassword|textPassword"
         android:paddingTop="5dp"
-        android:text="@string/confirm_password"
         android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
         android:textSize="18sp"
         android:textStyle="bold"
         app:drawableLeftCompat="@drawable/ic_baseline_security_24"
@@ -154,11 +159,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.57"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/password"
+        app:layout_constraintTop_toBottomOf="@+id/blood_group_blood_doner_registration"
         app:layout_constraintVertical_bias="0.085" />
 
     <Button
-        android:id="@+id/register_button"
+        android:id="@+id/register_blood_doner_registration"
         android:layout_width="172dp"
         android:layout_height="50dp"
         android:text="@string/Register"
@@ -166,11 +171,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/phone_number"
+        app:layout_constraintTop_toBottomOf="@+id/phone_number_doctor_registration"
         app:layout_constraintVertical_bias="0.172" />
 
     <TextView
-        android:id="@+id/bottom_text"
+        android:id="@+id/already_have_an_account"
         android:layout_width="357dp"
         android:layout_height="40dp"
         android:fontFamily="@font/andika_new_basic"
@@ -183,6 +188,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.569"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/register_button" />
+        app:layout_constraintTop_toBottomOf="@+id/register_blood_doner_registration" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

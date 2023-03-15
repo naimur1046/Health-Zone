@@ -52,7 +52,7 @@
 
         <androidx.cardview.widget.CardView
 
-            android:id="@+id/family_physician"
+            android:id="@+id/labtest_home_activity"
             android:layout_width="166dp"
             android:layout_height="wrap_content"
             android:layout_row="0"
