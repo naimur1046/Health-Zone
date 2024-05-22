@@ -1,3 +1,11 @@
+
+# Health Zone
+
+This Android application offers a comprehensive range of health-related online services. Key features include:
+
+ 1. Doctor Appointments: 
+ Easily book consultations with medical professionals.
+
  2. Medicine Delivery:
   Purchase and receive medications online.
 
