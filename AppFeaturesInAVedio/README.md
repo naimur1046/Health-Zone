@@ -1,4 +1,4 @@
-## Features of my Health Zone Application in below vedio shown
+##Features of my Health Zone Application in below vedio shown
+Welcome to the Health Zone Application! Discover the comprehensive features of our app in this video:
 
-https://youtu.be/JK8ArBV9RE4
-<a href="[https://readme.com/"](https://youtu.be/JK8ArBV9RE4) target="_blank">Youtube Link</a>
+[YouTube link Here](https://youtu.be/JK8ArBV9RE4)
