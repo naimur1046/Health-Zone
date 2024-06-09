@@ -28,7 +28,8 @@ These services aim to provide convenient and accessible healthcare solutions for
 **Server:** Firebase
 
 ## Screenshots
-[Screenshot of Health Zone is here](FrontEndPhotos)
+[Screenshot of Health Zone is here](AppFeaturesInScreenshot)
+
 
 ## Discover the comprehensive features of our app in this video:
 
